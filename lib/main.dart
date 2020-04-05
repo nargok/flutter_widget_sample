@@ -31,7 +31,17 @@ class WidgetStudy extends StatelessWidget {
     // TODO: implement build
      return Center(
        child: Container(
-         child: Text('ああああああ'),
+         child: Text.rich(
+           TextSpan(
+             text: 'Hello',
+             children: <TextSpan>[
+               TextSpan(text: 'beautiful',
+                        style: TextStyle(fontStyle: FontStyle.italic)),
+               TextSpan(text: 'world',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+             ],
+           )
+         ),
        ),
      );
   }
