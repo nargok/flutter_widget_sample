@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: ImageWidget()
+        home: WidgetStudy()
     );
   }
 }
@@ -48,6 +48,23 @@ class WidgetStudy extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[Text('E'), Text('F'), Text('G')],
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: Row(
+              children: <Widget>[
+                Icon(
+                  Icons.insert_emoticon,
+                  color: Colors.pink,
+                  size: 30.0,
+                ),
+                Icon(
+                  Icons.ac_unit,
+                  color: Colors.pink,
+                  size: 30.0,
+                ),
+              ],
+            ),
           )
         ],
       ),
