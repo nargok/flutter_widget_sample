@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:widgetstudy/container_study.dart';
 import 'image.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  debugPaintSizeEnabled = true; // 境界線を有効にする
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -21,7 +26,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: WidgetStudy()
+        home: ContainerStudy()
     );
   }
 }
