@@ -13,11 +13,12 @@ class ContainerStudy extends StatelessWidget {
             height: 500,
             width: 500,
             child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-//              mainAxisAlignment: MainAxisAlignment.center,
+//            crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(color: Colors.orange, width: 100, height: 100,),
                 Container(color: Colors.blue, width: 100, height: 100,),
+                Container(color: Colors.red, width: 100, height: 100,),
               ],
             ),
           ),
