@@ -14,7 +14,7 @@ class ContainerStudy extends StatelessWidget {
             width: 300.0,
             height: 300.0,
             child: Text('word'),
-            margin: const EdgeInsets.all(100.0),
+            padding: const EdgeInsets.all(100.0),
           ),
         ),
       ),
