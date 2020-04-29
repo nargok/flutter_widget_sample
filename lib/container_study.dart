@@ -9,13 +9,21 @@ class ContainerStudy extends StatelessWidget {
       title: 'Container',
       home: Scaffold(
         body: Center(
-          child: Container(
-            color: Colors.blue,
-            width: 300.0,
-            height: 300.0,
-            child: Text('word'),
-            alignment: Alignment.center,
-            transform: Matrix4.rotationZ(0.1),
+          child: Row(
+          children: <Widget>[
+            Column(
+              children: <Widget>[
+                Container(color: Colors.blue, width: 100, height: 100,),
+                Container(color: Colors.red, width: 100, height: 100,)
+              ],
+            ),
+            Column(
+              children: <Widget>[
+                Container(color: Colors.green, width: 100, height: 100,),
+                Container(color: Colors.orange, width: 100, height: 100,),
+              ],
+            )
+          ],
           ),
         ),
       ),
