@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:widgetstudy/container_study.dart';
+import 'package:widgetstudy/list_view/menu_list.dart';
 import 'package:widgetstudy/list_view_study.dart';
 import 'image.dart';
 
 void main() {
-  debugPaintSizeEnabled = true; // 境界線を有効にする
+//  debugPaintSizeEnabled = true; // 境界線を有効にする
   runApp(MyApp());
 }
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
+//        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           // This is the theme of your application.
           //
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: ListViewStudy()
+        home: MenuList()
     );
   }
 }
