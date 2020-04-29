@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:widgetstudy/container_study.dart';
+import 'package:widgetstudy/list_view_study.dart';
 import 'image.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: ContainerStudy()
+        home: ListViewStudy()
     );
   }
 }
