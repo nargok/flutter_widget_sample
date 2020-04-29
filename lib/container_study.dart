@@ -16,9 +16,9 @@ class ContainerStudy extends StatelessWidget {
 //            crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(color: Colors.orange, width: 100, height: 100,),
-                Container(color: Colors.blue, width: 100, height: 100,),
-                Container(color: Colors.red, width: 100, height: 100,),
+                Expanded(child: Container(color: Colors.orange, )),
+                Expanded(flex: 2, child: Container(color: Colors.blue, )),
+                Expanded(child: Container(color: Colors.red, )),
               ],
             ),
           ),
